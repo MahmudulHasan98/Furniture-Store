@@ -3,6 +3,8 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 
+axios.defaults.baseURL = "https://furniture-store-uvvx.onrender.com";
+
 const ProductEditScreen = () => {
   const { id } = useParams();
   const navigate = useNavigate();
