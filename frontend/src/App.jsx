@@ -10,7 +10,7 @@ import PlaceOrderScreen from "./pages/PlaceOrderScreen";
 import ProfileScreen from "./pages/ProfileScreen";
 import ProductListScreen from "./pages/ProductListScreen";
 import ProductEditScreen from "./pages/ProductEditScreen";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,7 +30,6 @@ function App() {
             path="/admin/product/:id/edit"
             element={<ProductEditScreen />}
           />
-          {/* 2. ADD THIS ROUTE */}
           <Route path="/admin/productlist" element={<ProductListScreen />} />
         </Routes>
       </main>
